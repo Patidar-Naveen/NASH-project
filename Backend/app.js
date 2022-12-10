@@ -11,6 +11,10 @@ app.get("/",(req,res)=>{
     res.end("running")
 })
 
+app.get("/home",(req,res)=>{
+    res.end("home running")
+})
+
 
 app.listen(process.env.PORT,()=>{
     console.log("Port is running on"+ process.env.PORT )
